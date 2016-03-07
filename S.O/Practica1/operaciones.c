@@ -38,12 +38,14 @@ int main() {
 		else {
 			if(opera(c)) {
 				aux1 = new(dato, operando);
-				aux1 -> operan = num;
-				push(&p, aux1);
+				if(num) {
+					aux1 -> operan = num;
+					push(&p, aux1);
+					num = 0;
+				}
 				aux1 = new(dato, operando);
 				aux1 -> operan = c;
 				push(&p, aux1);
-				num = 0;
 			}
 			else {
 				num = (c - '0') + num*10;
