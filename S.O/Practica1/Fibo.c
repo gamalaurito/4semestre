@@ -7,7 +7,7 @@ long int fibo(long int n)
 {
 	if(n==0) return 1;
 	if(n==1) return 1;
-	if(!memo[n]) return memo[n];
+	if(memo[n]) return memo[n];
 	memo[n] = fibo(n-2) + fibo(n-1);
 	return memo[n];
 }
