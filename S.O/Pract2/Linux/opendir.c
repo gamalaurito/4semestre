@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 	DIR *direc = opendir(argv[1]);
 	struct dirent *dir1 = readdir(direc);
 	struct dirent *dir2 = readdir(direc);
-	int read = readdir_r(direc, dir1, &dir2);
+	int read = readdir(direc, dir1, &dir2);
 	struct stat *ura = malloc(sizeof(struct stat));
 	printf("-----------------------------------------------------\n");
 	while(dir2 != NULL) {
