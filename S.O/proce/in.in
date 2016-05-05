@@ -1,0 +1,15 @@
+gcc multiplicacion.c -o multiplicacion
+gcc suma.c -o suma
+gcc resta.c -o resta
+gcc transpuesta.c -o transpuesta
+gcc inversa2.c -o  inversa2
+gcc matriz2.c -o 8pro
+gcc inversa.c -o inversa
+gcc hola.c -o hola
+gcc padre.c -o padre
+gcc prog7.c -o prog7
+gcc -std=c99 operaciones.c -o validar
+gcc permisos.c -o permisos
+gcc matriz1.c -o 6pro
+./8pro & ./padre & ./prog7 & ./6pro
+
